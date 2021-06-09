@@ -1,0 +1,194 @@
+{
+  "Collections": {
+    "key": "collections"
+  },
+  "Image": {
+    "key": "images"
+  },
+  "productType": {
+    "key": "productType"
+  },
+  "maxVariantPrice": {
+    "key": "maxVariantPrice"
+  },
+  "options": {
+    "key": "options"
+  },
+  "minVariantPrice": {
+    "key": "minVariantPrice"
+  },
+  "Online Store Url": {
+    "key": "onlineStoreUrl"
+  },
+  "Metafield": {
+    "key": "metafield"
+  },
+  "Online Store Preview Url": {
+    "key": "onlineStorePreviewUrl"
+  },
+  "Media Count": {
+    "key": "mediaCount"
+  },
+  "Legacy Resource Id": {
+    "key": "legacyResourceId"
+  },
+  "Is Gift Card": {
+    "key": "isGiftCard"
+  },
+  "In Collection": {
+    "key": "inCollection"
+  },
+  "Id": {
+    "key": "id"
+  },
+  "Has Only Default Variant": {
+    "key": "hasOnlyDefaultVariant"
+  },
+  "Has Out Of Stock Variants": {
+    "key": "hasOutOfStockVariants"
+  },
+  "Handle": {
+    "key": "handle"
+  },
+  "Gift Card Template Suffix": {
+    "key": "giftCardTemplateSuffix"
+  },
+  "Feedback": {
+    "key": "feedback"
+  },
+  "Featured Media": {
+    "key": "featuredMedia"
+  },
+  "Featured Image": {
+    "key": "featuredImage"
+  },
+  "Description Html": {
+    "key": "descriptionHtml"
+  },
+  "Description": {
+    "key": "description"
+  },
+  "Default Cursor": {
+    "key": "defaultCursor"
+  },
+  "Created At": {
+    "key": "createdAt"
+  },
+  "Resource Publications V2": {
+    "key": "resourcePublicationsV2"
+  },
+  "Available Publication Count": {
+    "key": "availablePublicationCount"
+  },
+  "variants": {
+    "key": "variants"
+  },
+  "Resource Publications": {
+    "key": "resourcePublications"
+  },
+  "Metafields": {
+    "key": "metafields"
+  },
+  "Media": {
+    "key": "media"
+  },
+  "Private Metafields": {
+    "key": "privateMetafields"
+  },
+  "vendor": {
+    "key": "vendor"
+  },
+  "translations": {
+    "key": "translations"
+  },
+  "updatedAt": {
+    "key": "updatedAt"
+  },
+  "Tracks Inventory": {
+    "key": "tracksInventory"
+  },
+  "Total Variants": {
+    "key": "totalVariants"
+  },
+  "Title": {
+    "key": "title"
+  },
+  "Total Inventory": {
+    "key": "totalInventory"
+  },
+  "Storefront Id": {
+    "key": "storefrontId"
+  },
+  "Tags": {
+    "key": "tags"
+  },
+  "Template Suffix": {
+    "key": "templateSuffix"
+  },
+  "Selling Plan Group Count": {
+    "key": "sellingPlanGroupCount"
+  },
+  "Status": {
+    "key": "status"
+  },
+  "SEO": {
+    "key": "seo"
+  },
+  "Published On Publication": {
+    "key": "publishedOnPublication"
+  },
+  "Published On Current Publication": {
+    "key": "publishedOnCurrentPublication"
+  },
+  "Requires Selling Plan": {
+    "key": "requiresSellingPlan"
+  },
+  "Published At": {
+    "key": "publishedAt"
+  },
+  "publicationCount": {
+    "key": "publicationCount"
+  },
+  "sku": {
+    "key": "sku"
+  },
+  "Selected Options": {
+    "key": "selectedOptions"
+  },
+  "position": {
+    "key": "position"
+  },
+  "image": {
+    "key": "image"
+  },
+  "defaultCursor": {
+    "key": "defaultCursor"
+  },
+  "fulfillmentService": {
+    "key": "fulfillmentService"
+  },
+  "Display Name": {
+    "key": "displayName"
+  },
+  "Available For Sale": {
+    "key": "availableForSale"
+  },
+  "barcode": {
+    "key": "barcode"
+  },
+  "Compare At Price": {
+    "key": "compareAtPrice"
+  },
+  "weightUnit": {
+    "key": "weightUnit"
+  },
+  "weight": {
+    "key": "weight"
+  },
+  "taxable": {
+    "key": "taxable"
+  },
+  "Tax Code": {
+    "key": "taxCode"
+  }
+}

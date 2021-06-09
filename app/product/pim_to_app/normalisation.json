@@ -1,0 +1,10 @@
+{
+  "product_id": {
+    "key": "product_id",
+    "helper": "handler_id"
+  },
+  "image_urls": {
+    "key": "image_urls",
+    "helper": "handler_image_urls"
+  }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,width=device-width">
+    <title>Unbxd PIM Appstore</title>
+    <link rel="icon" href="/images/unbxdicon.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://pimapps.unbxd.io/dist/css/bundle.css?v=1.0.0">
+</head>
+
+<body>
+<div id="app">
+    <div class="app-container">
+        <header class="app-header">
+            <div class="app-logo">
+                <img src="/images/unbxd_logo.png" alt="logo">
+            </div>
+        </header>
+        <div class="app-content">
+            <div class="">
+                <div class="align-center">
+                    {% if isLogin == '1' %}
+                    <h1 class="push-bottom-70 bold-text">Sign in to Unbxd PIM account</h1>
+                    <div class="login-box">
+
+                        <div class="login-title">Log In</div>
+                        {% if error_flag == 1 %}
+                        <p style="color:red;"> Wrong email or password</p>
+                        {% endif %}
+                        <form name="pimLoginForm" id="pimLoginForm" class="" method="post">
+                            {% csrf_token %}
+                            <div class="RCB-form-el-cont RCB-form-el-block ">
+                                <label class="RCB-form-el-label" for="email">Enter Email</label>
+                                <input type="text" label="Enter Email" name="email" id="email"
+                                       class="RCB-form-el" value="" required>
+                            </div>
+
+                            <div class="RCB-form-el-cont RCB-form-el-block ">
+                                <label class="RCB-form-el-label" for="password">Enter Password</label>
+                                <input type="password" label="Enter Password" name="password" id="password"
+                                       class="RCB-form-el" value="" required>
+                            </div>
+                            <hr class="thin-line">
+                            <button class="RCB-btn RCB-btn-primary RCB-btn-small full-width-btn" type="submit">Log In
+                            </button>
+
+
+                            <div class="link-text">Don’t have an account?
+                                <a target="_blank" href={{pim_domain}}#/signup>
+                                    Sign Up Now!
+                                </a>
+                            </div>
+                        </form>
+
+                        {% endif %}
+
+                        {% if isLogin == '0' %}
+                        <h1 class="push-bottom-70 bold-text">Register with the organisation</h1>
+                        <div class="login-box">
+                            <div class="login-title">Register</div>
+                            <form class="" method="post">
+                                {% csrf_token %}
+
+                                <div class="RCB-form-el-cont RCB-form-el-block RCB-dropdown "><label
+                                        class="RCB-form-el-label" for="org">Select PIM Organisation and marketplace
+                                </label>
+                                    <div class="RCB-inline-modal RCB-form-el">
+                                        <div class="RCB-inline-modal-btn">
+
+                                            <div>Select<span class="RCB-select-arrow"></span>
+                                                <select name="Organisation" required>
+                                                    {% spaceless %}
+                                                    <option disabled="true" value="" selected> --Select Organisation--</option>
+
+                                                    {% for dict in options %}
+
+                                                    <option class="RCB-select-arrow" value={{dict.org_key}}>
+                                                        {{dict.name}}
+                                                    </option>
+
+
+                                                    {% endfor %}
+                                                    {% endspaceless %}
+
+
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {% if app == 'amazonsp' %}
+                                <div>Select<span class="RCB-select-arrow"></span>
+                                    <select name="region" required>
+                                        {% spaceless %}
+                                        <option disabled="true" value="" selected> --Select Region--</option>
+
+                                        {% for dict in marketPlace %}
+
+                                        <option class="RCB-select-arrow" value={{dict.marketplaceId}}>
+                                            {{dict.Country}}
+                                        </option>
+
+
+                                        {% endfor %}
+                                        {% endspaceless %}
+
+
+                                    </select>
+
+                                </div>
+                                {% endif %}
+                                <div class="RCB-form-el-cont RCB-form-el-block ">
+                                    <label class="RCB-form-el-label" for="email">Enter Business/Site Name</label>
+                                    <input type="text" label="Enter Business/Site Name" name="siteName" id="siteName"
+                                           class="RCB-form-el" value="" required>
+                                </div>
+                                <hr class="thin-line">
+                                <button name = "auth_token" value = {{ auth_token }} class="RCB-btn RCB-btn-primary RCB-btn-small full-width-btn" type="submit">Register
+                                </button>
+                            </form>
+                            {% endif %}
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer><span>For more information please write to us at <a href="mailto:pim-support@unbxd.com"
+                                                                    class="anchor-link">pim-support@unbxd.com</a></span>
+        </footer>
+    </div>
+
+
+</body>
+</html>

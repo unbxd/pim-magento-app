@@ -1,0 +1,6 @@
+{
+  "id": {
+    "key": "product_id",
+    "helper": "handler_id"
+  }
+}
